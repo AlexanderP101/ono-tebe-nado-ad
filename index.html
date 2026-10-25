@@ -1,332 +1,125 @@
-/* Общие стили и сброс */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <nav class="header__menu">
+      <ul class="header__links-list">
+        <li class="header__links-list-item header__links-list-item_no-bullit"><a href="#0" class="header__link header__link_active">главная</a></li>
+        <li class="header__links-list-item"><a href="#lots" class="header__link">лоты</a></li>
+        <li class="header__links-list-item"><a href="#about" class="header__link">об аукционе</a></li>
+      </ul>
+    </nav>
+    <a class="header__logo">
+      <img src="./images/logo-black.svg" alt="Логотип сайта" class="header__logo-image">
+    </a>
+    <address class="address header__address">
+      <a href="tel:+99995555555">+9 999 555 5555</a>
+      <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <p>наб. Принсенграхт 263-265, Амстердам</p>
+    </address>
+  </header>
 
-body {
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-}
+  <main>
+    <!-- Секция 1: Обложка -->
+    <section class="cover">
+      <div class="overlay"></div>
+      <h1 class="cover__title">
+        <span class="aligned-text">оно <span class="letter-spacing-extended">тебе</span></span>
+        <span class="aligned-text aligned-text_center">над<span class="letter-spacing-extended">о</span></span>
+        <span class="aligned-text aligned-text_right"><span class="no-letter-spacing">а</span>укцион <span class="letter-spacing-extended">вещей,</span> в <span class="letter-spacing-extended">которые</span> никто <span class="letter-spacing-extended">не верил</span></span>
+      </h1>
+      <div class="cover__description">
+        <p class="cover__description-text">аукцион вещей, в которые никто не верил</p>
+        <button type="button" class="bet-button">сделать ставку</button>
+      </div>
+    </section>
 
-/* Шапка сайта (Header) */
-.header {
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  align-items: center;
-  padding: 92px 50px 0;
-}
+    <!-- Секция 2: Карточки лотов -->
+    <section class="lots" id="lots">
+      <h2 class="lots__heading">лоты</h2>
+      <ul class="lots__card-list">
+        <li class="lots__card-list-item">
+          <a href="#0" class="card-link">
+            <article class="card card_type_film">
+              <div class="overlay"></div>
+              <h3 class="card__title">фильм, режиссёр которого хотел расстрелять кассету с плёнкой</h3>
+              <p class="card__text">золотая пальмовая ветвь каннского фестиваля? нет, расстрелянная из дробовика кинолента.</p>
+            </article>
+          </a>
+        </li>
+        <li class="lots__card-list-item">
+          <a href="#0" class="card-link">
+            <article class="card card_type_book">
+              <div class="overlay"></div>
+              <h3 class="card__title">книга, где описан один скучный день из жизни рекламного агента</h3>
+              <p class="card__text">объёмная книга о том, как один человек ходит по дублину и ничего особенного не происходит. и это шедевр мировой литературы.</p>
+            </article>
+          </a>
+        </li>
+        <li class="lots__card-list-item">
+          <a href="#0" class="card-link">
+            <article class="card card_type_picture">
+              <div class="overlay"></div>
+              <h3 class="card__title">картина, которую художник написал из-за спора с соседом</h3>
+              <p class="card__text">сосед утверждал, что написать абстрактную картину может любой ребёнок. художник написал. получилось полотно за миллионы долларов.</p>
+            </article>
+          </a>
+        </li>
+      </ul>
+      <a href="#0" class="lots__look-more-link">посмотреть больше</a>
+    </section>
 
-.header__links-list {
-  display: flex;
-  gap: 32px;
-  list-style: circle;
-  padding-left: 20px;
-  margin: 0;
-}
+    <!-- Секция 3: Об аукционе -->
+    <section class="about" id="about">
+      <div class="about__column">
+        <div class="about__logo">
+          <img src="./images/logo-white.svg" alt="Белый логотип" class="about__logo-image">
+        </div>
+      </div>
+      <div class="about__column">
+        <h2 class="about__title">об аукционе</h2>
+        <div class="about__text">
+          <p>здесь вы не найдете очередных миллионов за картины неизвестных художников. в этом вся суть: наши лоты — это вещи, в которые никто не верил, пока они не стали культовыми. неудивительно, что вокруг них столько шума.</p>
+          <p>наука, искусство, литература, политика — всё это сферы, в которых рождаются гениальные идеи. но им редко удается пробиться с первого раза. кто-то погряз в долгах, кто-то сомневался в собственных силах, а кто-то просто опередил время. наше дело — спасти эти лоты и дать им второй шанс.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-.header__links-list-item_no-bullit {
-  list-style: none;
-}
-
-.header__link {
-  text-decoration: underline;
-  color: #000;
-  font-size: 18px;
-  white-space: nowrap;
-}
-
-.header__link_active {
-  text-decoration: none;
-}
-
-.header__logo {
-  display: block;
-  width: 148px;
-}
-
-.header__logo-image {
-  width: 100%;
-}
-
-.header__address {
-  justify-self: end;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 1.2;
-}
-
-.address a {
-  text-decoration: underline;
-  color: #000;
-}
-
-/* Секция обложки (Cover) */
-.cover {
-  position: relative;
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
-  background-position: center;
-  min-height: 756px;
-  margin-top: 40px;
-  padding: 165px 50px 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: #fff;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-}
-
-.cover * {
-  position: relative;
-  z-index: 2;
-}
-
-.cover__title {
-  font-size: 100px;
-  line-height: 1.15;
-  text-transform: uppercase;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin: 0;
-}
-
-.aligned-text {
-  display: block;
-}
-
-.aligned-text_center {
-  text-align: center;
-}
-
-.aligned-text_right {
-  text-align: right;
-}
-
-.letter-spacing-extended {
-  letter-spacing: 30px;
-}
-
-.no-letter-spacing {
-  letter-spacing: 0;
-}
-
-.cover__description {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.cover__description-text {
-  text-transform: uppercase;
-  word-spacing: 18px;
-  font-size: 22px;
-  margin: 0;
-}
-
-.bet-button {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 12px 32px;
-  font-size: 22px;
-  cursor: pointer;
-}
-
-/* Секция с карточками (Lots) */
-.lots {
-  padding: 180px 24px 0;
-}
-
-.lots__heading {
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 0 0 27px 0;
-  padding-left: 24px;
-}
-
-.lots__card-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 30px 0;
-}
-
-.lots__card-list-item {
-  width: 334px;
-  min-height: 596px;
-  flex-grow: 1;
-}
-
-.card-link {
-  text-decoration: none;
-  display: block;
-  height: 100%;
-}
-
-.card {
-  position: relative;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  padding: 48px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: #fff;
-}
-
-.card * {
-  position: relative;
-  z-index: 2;
-}
-
-.card_type_film {
-  background-image: url(../images/card-lot-01.jpg);
-}
-
-.card_type_book {
-  background-image: url(../images/card-lot-02.jpg);
-}
-
-.card_type_picture {
-  background-image: url(../images/card-lot-03.jpg);
-}
-
-.card__title {
-  font-size: 22px;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 1.2;
-  text-decoration: underline;
-  margin: 0;
-}
-
-.card__text {
-  font-size: 20px;
-  line-height: 1.2;
-  margin: 0;
-}
-
-.lots__look-more-link {
-  display: block;
-  margin-left: 24px;
-  font-size: 20px;
-  text-decoration: underline;
-  color: #000;
-}
-
-/* Секция «Об аукционе» (About) */
-.about {
-  padding: 180px 24px;
-  display: grid;
-  grid-template-columns: 334px 1fr;
-  gap: 25px;
-  align-items: start;
-}
-
-.about__column {
-  display: flex;
-  flex-direction: column;
-}
-
-.about__logo {
-  width: 240px;
-  height: 240px;
-  background-color: #000;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.about__logo-image {
-  width: 148px;
-}
-
-.about__title {
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 0 0 100px 0;
-}
-
-.about__text {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-.about__text p {
-  margin: 0;
-}
-
-/* Подвал (Footer) */
-.footer {
-  padding: 0 50px 90px;
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  align-items: center;
-}
-
-.footer__address {
-  justify-self: start;
-}
-
-.footer__menu-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  list-style: none;
-  gap: 32px;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__menu-link {
-  text-decoration: underline;
-  color: #000;
-  font-size: 18px;
-  white-space: nowrap;
-}
-
-.footer__menu-link_active {
-  text-decoration: none;
-}
-
-.footer__social-list {
-  display: flex;
-  gap: 48px;
-  list-style: none;
-  justify-self: end;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__social-link {
-  display: block;
-  width: 48px;
-  height: 48px;
-}
-
-.footer__social-icon {
-  width: 100%;
-}
+  <!-- Подвал сайта -->
+  <footer class="footer">
+    <address class="address footer__address">
+      <a href="tel:+99995555555">+9 999 555 5555</a>
+      <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <p>наб. Принсенграхт 263-265, Амстердам</p>
+    </address>
+    <nav class="footer__menu">
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list-item"><a href="#0" class="footer__menu-link footer__menu-link_active">главная</a></li>
+        <li class="footer__menu-list-item"><a href="#lots" class="footer__menu-link">лоты</a></li>
+        <li class="footer__menu-list-item"><a href="#about" class="footer__menu-link">об аукционе</a></li>
+      </ul>
+    </nav>
+    <ul class="footer__social-list">
+      <li class="footer__social-list-item">
+        <a href="#0" class="footer__social-link" target="_blank"><img src="./images/yt.svg" alt="YouTube" class="footer__social-icon"></a>
+      </li>
+      <li class="footer__social-list-item">
+        <a href="#0" class="footer__social-link" target="_blank"><img src="./images/vk.svg" alt="VK" class="footer__social-icon"></a>
+      </li>
+      <li class="footer__social-list-item">
+        <a href="#0" class="footer__social-link" target="_blank"><img src="./images/pinterest.svg" alt="Pinterest" class="footer__social-icon"></a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
