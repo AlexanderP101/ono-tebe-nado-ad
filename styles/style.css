@@ -281,8 +281,9 @@
   line-height: 100%;
   text-transform: uppercase;
 }
-
+/* */
 .about__text-block {
+  max-width: 680px;
   gap: 24px;
   display: flex;
   flex-direction: column;
