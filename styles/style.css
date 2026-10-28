@@ -58,7 +58,7 @@
 
 .header__address {
   padding-right: 35px;
-  padding-bottom: 8px;/* 10 */
+  padding-bottom: 6px;
   display: flex;
   justify-self: end;
   flex-direction: column;
