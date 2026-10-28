@@ -61,7 +61,8 @@
 }
 
 .cover {
-  padding: 165px 50px 50px;
+  /*padding: 165px 50px 50px;*/
+  padding: 100px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
@@ -112,7 +113,8 @@
 }
 
 .cover__description {
-  padding-top: 114px;
+  /*padding-top: 114px;*/
+  padding-top: 80px;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -147,7 +149,8 @@
 }
 
 .lots {
-  margin: 180px 25px 0;
+  /*margin: 180px 25px 0;*/
+  margin: 120px 25px 0;
 }
 
 .lots__heading {
@@ -239,7 +242,8 @@
 }
 
 .about {
-  margin: 170px 24px 0;
+  /*margin: 170px 24px 0;*/
+  margin: 120px 24px 0;
   display: grid;
   grid-template-columns: 333px 1fr;
   gap: 25px;
@@ -288,7 +292,8 @@
 }
 
 .footer {
-  margin-top: 180px;
+  /*margin-top: 180px;*/
+  margin-top: 120px;
   padding: 0 50px 90px;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
