@@ -31,7 +31,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.0;
   color: #000000;
   text-decoration: underline;
   text-transform: lowercase;
@@ -44,7 +44,7 @@ body {
 .header__logo {
   display: block;
   width: 148px;
-  height: 255px;
+  height: 105px;
 }
 
 .header__logo-image {
