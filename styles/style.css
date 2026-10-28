@@ -112,7 +112,8 @@
 }
 
 .cover__description {
-  padding-top: 114px;
+  /*padding-top: 114px;*/
+  padding-top: 106px;
   position: relative;
   display: flex;
   flex-direction: row;
