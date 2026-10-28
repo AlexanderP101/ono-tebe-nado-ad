@@ -61,8 +61,7 @@
 }
 
 .cover {
-  /*padding: 165px 50px 50px;*/
-  padding: 100px 50px 50px;
+  padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
