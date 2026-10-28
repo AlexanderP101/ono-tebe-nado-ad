@@ -12,7 +12,7 @@ body {
 }
 
 .header__menu {
-  justify-self: center;
+  justify-self: start;
 }
 
 .header__links-list {
