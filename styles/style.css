@@ -57,6 +57,10 @@ body {
   max-width: 240px;
 }
 
+
+
+
+
 .address {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -79,6 +83,10 @@ body {
   color: #000000;
   text-decoration: underline;
 }
+
+
+
+
 
 .cover {
   position: relative;
@@ -180,6 +188,10 @@ body {
   background-color: #ffffff;
   color: #000000;
 }
+
+
+
+
 
 .lots {
   padding: 120px 24px;
@@ -337,6 +349,10 @@ body {
   color: #000000;
   margin: 5px 28px 0 0;
 }
+
+
+
+
 
 .footer {
   display: grid;
