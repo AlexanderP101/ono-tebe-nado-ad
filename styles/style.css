@@ -2,20 +2,20 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px;
+  padding: 92px 50px;  
 }
 
 .header__menu {
-  padding-bottom: 6px;
+  padding-bottom: 6px; /* отступ снизу */
 }
 .header__links-list {
   display: flex;
-  flex-direction: row;
-  gap: 32px;
+  flex-direction: row; /* горизонтальное направление оси */
+  gap: 32px;  /* расстояние между дочерними элементами внутри контейнера */
 }
 
 .header__links-list-item {
-  list-style: circle;
+  list-style: circle; /* расстояние между дочерними элементами внутри контейнера */
 }
 
 .header__links-list-item_no-bullit {
