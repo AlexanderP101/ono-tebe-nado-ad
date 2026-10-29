@@ -1,5 +1,5 @@
 .header {
-  display: grid;
+  display: grid; /*превращает элемент с классом .header в сетку*/
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px;
