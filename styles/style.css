@@ -60,7 +60,7 @@
   padding-right: 35px;
   padding-bottom: 6px;
   display: flex;
-  justify-self: end;
+  justify-self: end; /* Выравнивает элемент по правому краю своей Grid-ячейки */
   flex-direction: column;
 }
 
