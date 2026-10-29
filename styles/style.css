@@ -67,7 +67,7 @@
 .cover {
   padding: 165px 50px 50px;
   background-image: url(../images/cover.jpg);
-  background-size: cover;
+  background-size: cover; /* Растягивает фоновое изображение на весь блок с сохранением пропорций */
   background-position: center;
   position: relative;
 }
