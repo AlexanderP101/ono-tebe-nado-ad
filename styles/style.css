@@ -10,7 +10,7 @@
 }
 .header__links-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Задает направление главной оси во Flexbox-контейнере и располагает дочерние элементы в строку */
   gap: 32px;
 }
 
