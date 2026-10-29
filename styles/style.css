@@ -1,7 +1,7 @@
 .header {
   display: grid; /*превращает элемент с классом .header в сетку*/
   grid-template-columns: 1fr min-content 1fr; /* определяет 3 колонки*/
-  align-items: center; /*выравнивает элементы всех колонок по вертикальной оси (по центру)*.
+  align-items: center; /*выравнивает элементы всех колонок по вертикальной оси (по центру)*/.
   padding: 92px 50px;
 }
 
