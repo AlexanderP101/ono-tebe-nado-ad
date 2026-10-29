@@ -1,10 +1,15 @@
-.header {
+/*.header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px;  
+}*/
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px;
 }
-
 .header__menu {
   padding-bottom: 6px; 
 }
