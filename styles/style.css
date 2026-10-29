@@ -1,7 +1,7 @@
 .header {
   display: grid; /*превращает элемент с классом .header в сетку*/
   grid-template-columns: 1fr min-content 1fr;
-  align-items: center;
+  align-items: center; /*выравнивание дочерних элеиентов по центру*/
   padding: 92px 50px;
 }
 
