@@ -6,16 +6,16 @@
 }
 
 .header__menu {
-  padding-bottom: 6px; /* отступ снизу */
+  padding-bottom: 6px; 
 }
 .header__links-list {
   display: flex;
-  flex-direction: row; /* горизонтальное направление оси */
-  gap: 32px;  /* расстояние между дочерними элементами внутри контейнера */
+  flex-direction: row; 
+  gap: 32px;  
 }
 
 .header__links-list-item {
-  list-style: circle; /* расстояние между дочерними элементами внутри контейнера */
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
